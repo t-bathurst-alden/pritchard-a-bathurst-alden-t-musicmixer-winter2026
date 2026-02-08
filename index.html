@@ -3,11 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="grid-con center-grid-con" id="header">
+        <div class="box col-span-full">
+            <h1>Music Mixer</h1>
+        </div>
+    </header>
+    <main id="main-body">
+        <section class="grid-con center-grid-con" id="stage">
+            <div class="box col-span-full m-col-start-2 m-col-end-12">
+                <h2>main stage drawing is gonna be a background image</h2>
+            </div>
+        </section>
+        <section class="grid-con center-grid-con" id="icons">
+            <div class="box col-start-1 col-end-2 m-col-start-1 m-col-end-4">
+                <h2>Icon 1</h2>
+            </div>
+            <div class="box col-start-2 col-end-3 m-col-start-4 m-col-end-7">
+                <h2>Icon 2</h2>
+            </div>
+            <div class="box col-start-3 col-end-4 m-col-start-7 m-col-end-10">
+                <h2>Icon 3</h2>
+            </div>
+            <div class="box col-start-4 col-end-5 m-col-start-10 m-col-end-13">
+                <h2>Icon 4</h2>
+            </div>
+        </section>
+        <section class="grid-con center-grid-con" id="buttons">
+            <div class="box col-start-1 col-end-2 m-col-start-1 m-col-end-5">
+                <h2>Play button</h2>
+            </div>
+            <div class="box col-start-2 col-end-4 m-col-start-5 m-col-end-9">
+                <h2>Pause button</h2>
+            </div>
+            <div class="box col-start-4 col-end-5 m-col-start-9 m-col-end-13">
+                <h2>Rewind button</h2>
+            </div>
+        </section>
+        <footer>
+            <section class="grid-con center-grid-con" id="main-footer">
+                <div class="box col-span-full">
+                    <h2>SVGs of stage lights moving</h2>
+                </div>
+            </section>
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
