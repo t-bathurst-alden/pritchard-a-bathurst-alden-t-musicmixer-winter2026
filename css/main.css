@@ -1,0 +1,21 @@
+#stage {
+    margin-bottom: 400px;
+}
+
+#header {
+    font-family:"Silkscreen", Arial, Helvetica, sans-serif;
+    background-color: rgb(187, 247, 247);
+}
+
+#main-body {
+    font-family:"Silkscreen", Arial, Helvetica, sans-serif;
+    background-color: rgb(187, 247, 247);
+}
+
+#buttons {
+    font-size: 10px;
+}
+
+#main-footer {
+    height: 200px;
+}

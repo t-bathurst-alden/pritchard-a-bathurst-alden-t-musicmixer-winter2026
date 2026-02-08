@@ -1,9 +1,9 @@
-# ${1:Project Name}
-TODO: Write a project description
+# Music Mixer
+A project to demonstrate understanding of basic JavaScript
 ## Installation
-TODO: Describe the installation process
+No installation required, simply download and enjoy!
 ## Usage
-TODO: Write usage instructions
+Open index.html in any browser you wish.
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -11,8 +11,9 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
-TODO: Write history
+First commit: filling out pages
+Second commit: page layout
 ## Credits
-TODO: Write credits
+Tegan Bathurst-Alden and Alex Pritchard
 ## License
-TODO: Write license
+MIT License
