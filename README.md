@@ -1,5 +1,8 @@
 # Music Mixer
 A project to demonstrate understanding of basic JavaScript
+
+Our aim with this project is to create a music mixer webpage with inspired visuals to accompany it. It will also include javascript functionality. It will feature electronic music and have a scratchy / sketchy inspiration for its visuals. We will be making a boombox art asset as the main interactive feature. We have at this point also added our audio files and some visual inspiration files in the Images folder
+
 ## Installation
 No installation required, simply download and enjoy!
 ## Usage
