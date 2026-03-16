@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
-    <title>Document</title>
+    <title>Music Mixer</title>
 </head>
 <body>
     <header class="grid-con center-grid-con" id="header">
@@ -18,44 +18,42 @@
     </header>
     <main id="main-body">
         <section class="grid-con center-grid-con" id="stage">
-            <div class="box col-span-full m-col-start-2 m-col-end-12">
-                <h2>Main drawing of our Boombox will go here</h2>
+            <div class="col-span-full m-col-start-2 m-col-end-12">
+                <h2 class="visually-hidden">DJ Table</h2>
+                <img src="images/turntables.svg" alt="Turntables">
             </div>
         </section>
-        <section class="grid-con center-grid-con" id="icons">
+        <section class="grid-con center-grid-con">
             <h2 class="hidden">Vinyls</h2>
-            <div class="col-span-2 m-col-start-2 m-col-end-4">
+            <div class="col-span-full" id="vinyls">
                 <img src="images/vinyl1.svg" alt="A green labelled vinyl">
-            </div>
-            <div class="col-span-2 m-col-span-2">
                 <img src="images/vinyl2.svg" alt="A blue labelled vinyl">
-            </div>
-            <div class="col-span-2 m-col-span-2">
                 <img src="images/vinyl3.svg" alt="A red labelled vinyl">
-            </div>
-            <div class="col-span-2 m-col-span-2">
                 <img src="images/vinyl4.svg" alt="A yellow labelled vinyl">
-            </div>
-            <div class="col-start-2 col-end-4 m-col-span-2">
                 <img src="images/vinyl5.svg" alt="A pink labelled vinyl">
             </div>
         </section>
-        <section class="grid-con center-grid-con" id="buttons">
-            <h2 class="hidden">Buttons</h2>
-            <div class="col-start-1 col-end-2 m-col-start-3 m-col-end-5">
-                <img src="images/playbutton.svg" alt="">
+        <section class="grid-con center-grid-con">
+            <h2 class="visually-hidden">Buttons and Audio Controls</h2>
+            <div class="col-span-full" id="mainbuttons">
+                <button id="playButton" type="button">
+                    <span class="visually-hidden">Play</span>
+                </button>
+                <button id="pauseButton" type="button">
+                    <span class="visually-hidden">Pause</span>
+                </button>
+                <button id="rewindButton" type="button">
+                    <span class="visually-hidden">Rewind</span>
+                </button>
             </div>
-            <div class="col-start-2 col-end-4 m-col-start-6 m-col-end-8">
-                <img src="images/pausebutton.svg" alt="">
-            </div>
-            <div class="col-start-4 col-end-5 m-col-start-9 m-col-end-11">
-                <img src="images/stop.svg" alt="">
+            <div class="col-span-full m-col-start-2 m-col-end-12 l-col-start-4 l-col-end-10">
+                <input id="volumeControl" type="range" min="0" max="100" step="1">
             </div>
         </section>
         <footer>
             <section class="grid-con center-grid-con" id="main-footer">
                 <div class="box col-span-full">
-                    <h2>SVGs of buttons and knobs, etc.</h2>
+                    <h2>Decorative Images</h2>
                 </div>
             </section>
         </footer>

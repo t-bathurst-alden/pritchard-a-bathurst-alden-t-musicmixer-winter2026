@@ -1,5 +1,10 @@
 #stage {
-    margin-bottom: 400px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+#stage img {
+    width: 500px;
 }
 
 #header {
@@ -12,11 +17,94 @@
     background-color: rgb(187, 247, 247);
 }
 
-#buttons {
+#vinyls {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+#vinyls img {
+    height: 40px;
+}
+
+#mainbuttons {
     margin-top: 50px;
     font-size: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
 }
 
 #main-footer {
     height: 200px;
+}
+
+#playButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url(../images/playbutton.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    width: 80px; 
+    height: 80px; 
+}
+
+#pauseButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url(../images/pausebutton.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    width: 80px; 
+    height: 80px; 
+}
+
+#rewindButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url(../images/rewindbutton.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    width: 80px; 
+    height: 80px; 
+}
+
+@media screen and (min-width: 412px) {
+    #stage img {
+        width: 800px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #mainbuttons button {
+        height: 60px;
+        width: 60px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    #vinyls {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    flex-wrap: nowrap;
+}
+#stage img {
+        width: 1300px;
+    }
 }
