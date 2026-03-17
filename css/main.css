@@ -3,9 +3,49 @@
     margin-bottom: 100px;
 }
 
-#stage img {
-    width: 500px;
+#djtable {
+    width: 100%;
+    position: relative;
+    display: block;
 }
+
+.targetzone {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    width: 40px;
+    height: 25px;
+}
+
+#zone1 {
+    top: 22.5%;
+    left: 24.5%;
+}
+
+#zone2 {
+    top: 25.5%;
+    left: 12%;
+}
+
+#zone3 {
+    top: 26%;
+    left: 45%;
+}
+
+#zone4 {
+    top: 22.5%;
+    left: 65%; 
+}
+
+#zone5 {
+    top: 25.5%;
+    left: 78%;
+}
+
 
 #header {
     font-family:"Silkscreen", Arial, Helvetica, sans-serif;
@@ -28,6 +68,23 @@
     margin-bottom: 50px;
 }
 
+#vinyls .songs {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#vinyls .songs:hover {
+    animation: vinylspin .2s ease-in-out;
+}
+
+@keyframes vinylspin {
+    0%  { transform: rotate(0deg); }
+    25% { transform: rotate(30deg); }
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-30deg);}
+    100% { transform: rotate(0deg); }
+}
+
 #vinyls img {
     height: 40px;
 }
@@ -38,6 +95,14 @@
     display: flex;
     justify-content: space-evenly;
     height: 100px;
+}
+
+#mainbuttons button {
+    transition: all .2s linear;
+}
+
+#mainbuttons button:hover {
+    transform: translateY(-10px);
 }
 
 #main-footer {
@@ -80,12 +145,92 @@
     height: 80px; 
 }
 
-@media screen and (min-width: 412px) {
-    #stage img {
-        width: 800px;
-    }
+#volumeControl {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  accent-color: #405aff;
+  justify-content: center;
 }
 
+
+@media screen and (min-width: 590px) {
+    .targetzone {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    width: 70px;
+    height: 30px;
+}
+
+#zone1 {
+    top: 23%;
+    left: 24.5%;
+}
+
+#zone2 {
+    top: 27.5%;
+    left: 11%;
+}
+
+#zone3 {
+    top: 28.5%;
+    left: 44.3%;
+}
+
+#zone4 {
+    top: 23%;
+    left: 65%; 
+}
+
+#zone5 {
+    top: 27.5%;
+    left: 78%;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .targetzone {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    width: 85px;
+    height: 35px;
+}
+
+#zone1 {
+    top: 23.5%;
+    left: 27%;
+}
+
+#zone2 {
+    top: 28%;
+    left: 17%;
+}
+
+#zone3 {
+    top: 29%;
+    left: 44.5%;
+}
+
+#zone4 {
+    top: 23.5%;
+    left: 62%; 
+}
+
+#zone5 {
+    top: 28%;
+    left: 72%;
+}
+}
 
 @media screen and (max-width: 768px) {
     #mainbuttons button {
@@ -93,9 +238,64 @@
         width: 60px;
     }
 
+    #vinyls {
+        margin-bottom: 0 auto;
+    }
+
+    #vinyls img {
+        height: 30px;
+    }
 
 }
 
+@media screen and (min-width: 1000px) {
+    #stage img {
+        width: 1000px;
+    }
+    #volumeControl {
+        width: 1050px;
+        height: 50px;
+        cursor: pointer;
+        accent-color: #405aff;
+        justify-content: center;
+        }
+    .targetzone {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    width: 100px;
+    height: 40px;
+}
+
+#zone1 {
+    top: 24.2%;
+    left: 27%;
+}
+
+#zone2 {
+    top: 30.5%;
+    left: 17%;
+}
+
+#zone3 {
+    top: 32%;
+    left: 45%;
+}
+
+#zone4 {
+    top: 24.2%;
+    left: 62.5%; 
+}
+
+#zone5 {
+    top: 30.5%;
+    left: 73%;
+}
+}
 
 @media screen and (min-width: 1200px) {
     #vinyls {
@@ -107,4 +307,44 @@
 #stage img {
         width: 1300px;
     }
+
+    #volumeControl {
+  width: 1165px;
+}
+.targetzone {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    width: 120px;
+    height: 60px;
+}
+
+#zone1 {
+    top: 24.5%;
+    left: 27%;
+}
+
+#zone2 {
+    top: 31.5%;
+    left: 17%;
+}
+
+#zone3 {
+    top: 33.5%;
+    left: 45%;
+}
+
+#zone4 {
+    top: 24.5%;
+    left: 62.5%; 
+}
+
+#zone5 {
+    top: 31.5%;
+    left: 73%;
+}
 }
