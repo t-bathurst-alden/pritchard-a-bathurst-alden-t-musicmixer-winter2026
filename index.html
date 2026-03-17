@@ -17,20 +17,26 @@
         </div>
     </header>
     <main id="main-body">
+        <audio src="audio/Around_Trimmed.mp3"></audio> <!--Audio element-->
         <section class="grid-con center-grid-con" id="stage">
             <div class="col-span-full m-col-start-2 m-col-end-12">
                 <h2 class="visually-hidden">DJ Table</h2>
-                <img src="images/turntables.svg" alt="Turntables">
+                <img src="images/turntables.svg" alt="Turntables" id="djtable">
+                <div class="targetzone" id="zone1"></div>
+                <div class="targetzone" id="zone2"></div>
+                <div class="targetzone" id="zone3"></div>
+                <div class="targetzone" id="zone4"></div>
+                <div class="targetzone" id="zone5"></div>
             </div>
         </section>
         <section class="grid-con center-grid-con">
             <h2 class="hidden">Vinyls</h2>
             <div class="col-span-full" id="vinyls">
-                <img src="images/vinyl1.svg" alt="A green labelled vinyl">
-                <img src="images/vinyl2.svg" alt="A blue labelled vinyl">
-                <img src="images/vinyl3.svg" alt="A red labelled vinyl">
-                <img src="images/vinyl4.svg" alt="A yellow labelled vinyl">
-                <img src="images/vinyl5.svg" alt="A pink labelled vinyl">
+                <img data-trackref="Around_Trimmed" src="images/vinyl1.svg" alt="A green labelled vinyl" class="songs" draggable="true">
+                <img data-trackref="In_The_Pocket_Trimmed" src="images/vinyl2.svg" alt="A blue labelled vinyl" class="songs" draggable="true">
+                <img data-trackref="Slum_Lord_Trimmed" src="images/vinyl3.svg" alt="A red labelled vinyl" class="songs" draggable="true">
+                <img data-trackref="The_Rumble_Trimmed" src="images/vinyl4.svg" alt="A yellow labelled vinyl" class="songs" draggable="true">
+                <img data-trackref="Trian_Courtship_Trimmed" src="images/vinyl5.svg" alt="A pink labelled vinyl" class="songs" draggable="true">
             </div>
         </section>
         <section class="grid-con center-grid-con">
@@ -46,7 +52,7 @@
                     <span class="visually-hidden">Rewind</span>
                 </button>
             </div>
-            <div class="col-span-full m-col-start-2 m-col-end-12 l-col-start-4 l-col-end-10">
+            <div class="col-span-full" id="volume">
                 <input id="volumeControl" type="range" min="0" max="100" step="1">
             </div>
         </section>
