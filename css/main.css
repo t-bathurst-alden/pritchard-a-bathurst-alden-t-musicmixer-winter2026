@@ -3,6 +3,10 @@
     margin-bottom: 100px;
 }
 
+#stage img {
+    width: 1300px;
+}
+
 #djtable {
     width: 100%;
     position: relative;
@@ -17,33 +21,36 @@
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
-    width: 40px;
-    height: 25px;
+    width: 120px;
+    height: 60px;
 }
 
 #zone1 {
     top: 22.5%;
-    left: 24.5%;
+    left: 27%;
 }
 
 #zone2 {
-    top: 25.5%;
-    left: 12%;
+    top: 29%;
+    left: 17%;
 }
 
 #zone3 {
-    top: 26%;
+    top: 31%;
     left: 45%;
 }
 
 #zone4 {
     top: 22.5%;
-    left: 65%; 
+    left: 62.5%; 
 }
 
 #zone5 {
-    top: 25.5%;
-    left: 78%;
+    top: 29%;
+    left: 73%;
+}
+.blue {
+    background-color: rgb(7, 53, 255);
 }
 
 
@@ -60,12 +67,8 @@
 #vinyls {
     display: flex;
     justify-content: space-evenly;
-    height: 50px;
-    flex-wrap: wrap;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
+    height: 60px;
+    flex-wrap: nowrap;
 }
 
 #vinyls .songs {
@@ -147,204 +150,8 @@
 
 #volumeControl {
   width: 100%;
-  height: 50px;
   cursor: pointer;
   accent-color: #405aff;
   justify-content: center;
 }
 
-
-@media screen and (min-width: 590px) {
-    .targetzone {
-    position: absolute;
-    border-radius: 50%;
-    border: 2px dashed rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s;
-    width: 70px;
-    height: 30px;
-}
-
-#zone1 {
-    top: 23%;
-    left: 24.5%;
-}
-
-#zone2 {
-    top: 27.5%;
-    left: 11%;
-}
-
-#zone3 {
-    top: 28.5%;
-    left: 44.3%;
-}
-
-#zone4 {
-    top: 23%;
-    left: 65%; 
-}
-
-#zone5 {
-    top: 27.5%;
-    left: 78%;
-}
-}
-
-@media screen and (min-width: 768px) {
-    .targetzone {
-    position: absolute;
-    border-radius: 50%;
-    border: 2px dashed rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s;
-    width: 85px;
-    height: 35px;
-}
-
-#zone1 {
-    top: 23.5%;
-    left: 27%;
-}
-
-#zone2 {
-    top: 28%;
-    left: 17%;
-}
-
-#zone3 {
-    top: 29%;
-    left: 44.5%;
-}
-
-#zone4 {
-    top: 23.5%;
-    left: 62%; 
-}
-
-#zone5 {
-    top: 28%;
-    left: 72%;
-}
-}
-
-@media screen and (max-width: 768px) {
-    #mainbuttons button {
-        height: 60px;
-        width: 60px;
-    }
-
-    #vinyls {
-        margin-bottom: 0 auto;
-    }
-
-    #vinyls img {
-        height: 30px;
-    }
-
-}
-
-@media screen and (min-width: 1000px) {
-    #stage img {
-        width: 1000px;
-    }
-    #volumeControl {
-        width: 1050px;
-        height: 50px;
-        cursor: pointer;
-        accent-color: #405aff;
-        justify-content: center;
-        }
-    .targetzone {
-    position: absolute;
-    border-radius: 50%;
-    border: 2px dashed rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s;
-    width: 100px;
-    height: 40px;
-}
-
-#zone1 {
-    top: 24.2%;
-    left: 27%;
-}
-
-#zone2 {
-    top: 30.5%;
-    left: 17%;
-}
-
-#zone3 {
-    top: 32%;
-    left: 45%;
-}
-
-#zone4 {
-    top: 24.2%;
-    left: 62.5%; 
-}
-
-#zone5 {
-    top: 30.5%;
-    left: 73%;
-}
-}
-
-@media screen and (min-width: 1200px) {
-    #vinyls {
-    display: flex;
-    justify-content: space-evenly;
-    height: 60px;
-    flex-wrap: nowrap;
-}
-#stage img {
-        width: 1300px;
-    }
-
-    #volumeControl {
-  width: 1165px;
-}
-.targetzone {
-    position: absolute;
-    border-radius: 50%;
-    border: 2px dashed rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s;
-    width: 120px;
-    height: 60px;
-}
-
-#zone1 {
-    top: 24.5%;
-    left: 27%;
-}
-
-#zone2 {
-    top: 31.5%;
-    left: 17%;
-}
-
-#zone3 {
-    top: 33.5%;
-    left: 45%;
-}
-
-#zone4 {
-    top: 24.5%;
-    left: 62.5%; 
-}
-
-#zone5 {
-    top: 31.5%;
-    left: 73%;
-}
-}
