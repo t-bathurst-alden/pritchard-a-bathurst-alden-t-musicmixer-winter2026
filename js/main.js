@@ -1,3 +1,5 @@
+console.log("JS File Connected")
+
 const theAudioEl = document.querySelector('audio');
 const playButton = document.querySelector('#playButton');
 const pauseButton = document.querySelector('#pauseButton');
@@ -59,9 +61,11 @@ function drop(e) {
 	    }
       
       this.appendChild(currentDraggedElement);
+
+      currentDraggedElement = null;
       }
 
-vinyls.forEach(record => record.addEventListener('dropped', loadAudio));
+vinyls.forEach(songs => songs.addEventListener('dropped', loadAudio));
 
 playButton.addEventListener("click", playAudio);
 
