@@ -6,7 +6,7 @@ const pauseButton = document.querySelector('#pauseButton');
 const rewindButton = document.querySelector('#rewindButton');
 const volSlider = document.querySelector('#volumeControl');
 const songs = document.querySelectorAll('.songs');
-const vinyls = document.querySelector('#vinyls');
+const vinyls = document.querySelectorAll('#vinyls img');
 const targetZones = document.querySelectorAll('.targetzone');
 let currentDraggedElement = null;
 
@@ -67,6 +67,7 @@ function drop(e) {
 
 vinyls.forEach(songs => songs.addEventListener('dropped', loadAudio));
 
+vinyls.forEach(songs => songs.addEventListener('dragstart', dragStart));
 playButton.addEventListener("click", playAudio);
 
 pauseButton.addEventListener("click", pauseAudio);
@@ -76,6 +77,7 @@ rewindButton.addEventListener("click", restartAudio);
 volSlider.addEventListener("change", setVolume);
 
 targetZones.forEach(zone => {
+      zone.addEventListener('dragstart', dragStart);
       zone.addEventListener('dragleave', dragLeave);
       zone.addEventListener('dragenter', dragEnter);
       zone.addEventListener('dragover', dragOver);
