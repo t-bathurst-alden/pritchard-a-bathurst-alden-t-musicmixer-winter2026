@@ -155,3 +155,44 @@
   justify-content: center;
 }
 
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 96vw;
+    transition: all .25s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color: rgb(0, 183, 255);
+    
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 60px;
+}
+
+.lightbox p {
+    line-height: 50px;
+}

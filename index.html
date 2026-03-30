@@ -17,8 +17,14 @@
         </div>
     </header>
     <main id="main-body">
-        <audio src="audio/Around_Trimmed.mp3"></audio> <!--Audio element-->
+        <audio id="around" src="audio/Around_Trimmed.mp3" preload="auto"></audio>
+        <audio id="in-the-pocket" src="audio/In_The_Pocket_Trimmed.mp3" preload="auto"></audio>
+        <audio id="slum-lord" src="audio/Slum_Lord_Trimmed.mp3" preload="auto"></audio>
+        <audio id="the-rumble" src="audio/The_Rumble_Trimmed.mp3" preload="auto"></audio>
+        <audio id="turian-courtship" src="audio/Turian_Courtship_Trimmed.mp3" preload="auto"></audio> <!--Audio element-->
+
         <section class="grid-con center-grid-con" id="stage">
+            
             <div class="col-span-full m-col-start-2 m-col-end-12">
                 <h2 class="visually-hidden">DJ Table</h2>
                 <img src="images/turntables.svg" alt="Turntables" id="djtable">
@@ -32,11 +38,11 @@
         <section class="grid-con center-grid-con">
             <h2 class="hidden">Vinyls</h2>
             <div class="col-span-full" id="vinyls">
-                <img data-trackref="Around_Trimmed" src="images/vinyl1.svg" alt="A green labelled vinyl" class="songs" draggable="true">
-                <img data-trackref="In_The_Pocket_Trimmed" src="images/vinyl2.svg" alt="A blue labelled vinyl" class="songs" draggable="true">
-                <img data-trackref="Slum_Lord_Trimmed" src="images/vinyl3.svg" alt="A red labelled vinyl" class="songs" draggable="true">
-                <img data-trackref="The_Rumble_Trimmed" src="images/vinyl4.svg" alt="A yellow labelled vinyl" class="songs" draggable="true">
-                <img data-trackref="Trian_Courtship_Trimmed" src="images/vinyl5.svg" alt="A pink labelled vinyl" class="songs" draggable="true">
+                <img id="green-vinyl" data-trackref="Around_Trimmed" src="images/vinyl1.svg" alt="A green labelled vinyl" class="songs" draggable="true">
+                <img id="blue-vinyl" data-trackref="In_The_Pocket_Trimmed" src="images/vinyl2.svg" alt="A blue labelled vinyl" class="songs" draggable="true">
+                <img id="red-vinyl" data-trackref="Slum_Lord_Trimmed" src="images/vinyl3.svg" alt="A red labelled vinyl" class="songs" draggable="true">
+                <img id="yellow-vinyl" data-trackref="The_Rumble_Trimmed" src="images/vinyl4.svg" alt="A yellow labelled vinyl" class="songs" draggable="true">
+                <img id="pink-vinyl" data-trackref="Trian_Courtship_Trimmed" src="images/vinyl5.svg" alt="A pink labelled vinyl" class="songs" draggable="true">
             </div>
         </section>
         <section class="grid-con center-grid-con">
@@ -53,16 +59,12 @@
                 </button>
             </div>
             <div class="col-span-full" id="volume">
+                <div class="volume-header col">
+                <h3>Volume</h3>
+                </div>
                 <input id="volumeControl" type="range" min="0" max="100" step="1">
             </div>
         </section>
-        <footer>
-            <section class="grid-con center-grid-con" id="main-footer">
-                <div class="box col-span-full">
-                    <h2>Decorative Images</h2>
-                </div>
-            </section>
-        </footer>
     </main>
     <script src="js/main.js"></script>
 </body>
